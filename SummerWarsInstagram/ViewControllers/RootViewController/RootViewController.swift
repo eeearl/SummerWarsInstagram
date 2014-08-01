@@ -10,6 +10,8 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+    var mediaArray = [NSArray]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +33,21 @@ class RootViewController: UIViewController {
     }
     
     func loadPopularMedia() {
-
+        // typedef void (^InstagramFailureBlock)(NSError *error);
+        func instagramFailureBlock(error:NSError) -> Void {
+            println("Load Popular Media Failed")
+        }
+        
+        // typedef void(^InstagramMediaBlock)(NSArray *media, InstagramPaginationInfo *paginationInfo);
+        func instagramMediaBlock(media:NSArray, paginationInfo:InstagramPaginationInfo) -> Void {
+            mediaArray.removeAll(keepCapacity:false)
+            mediaArray += media
+            reloadData()
+        }
+    }
+    
+    func reloadData() {
+        println("reloadData");
     }
     
 
