@@ -14,11 +14,24 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.loadDefaultMedia()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadDefaultMedia() {
+        if (InstagramEngine.sharedManager()?.accessToken?) {
+            
+        } else {
+            self.loadPopularMedia()
+        }
+    }
+    
+    func loadPopularMedia() {
+
     }
     
 

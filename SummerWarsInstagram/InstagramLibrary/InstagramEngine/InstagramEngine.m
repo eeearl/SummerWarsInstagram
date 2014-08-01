@@ -110,7 +110,7 @@ static NSString *const kPagination = @"pagination";
         
         self.operationManager.responseSerializer = [[AFJSONResponseSerializer alloc] init];
         
-        BOOL validClientId = IKNotNull(self.appClientID) && ![self.appClientID isEqualToString:@""] && ![self.appClientID isEqualToString:@"106e8eea6eb549559f8efb5962d98ca0"];
+        BOOL validClientId = IKNotNull(self.appClientID) && ![self.appClientID isEqualToString:@""];
         NSAssert(validClientId, @"Invalid Instagram Client ID.");
         NSAssert([NSURL URLWithString:self.appRedirectURL], @"App Redirect URL invalid: %@", self.appRedirectURL);
         NSAssert([NSURL URLWithString:self.authorizationURL], @"Authorization URL invalid: %@", self.authorizationURL);
@@ -145,7 +145,6 @@ static NSString *const kPagination = @"pagination";
     [[UIApplication sharedApplication] openURL:url];
 }
 
-/*
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
@@ -176,7 +175,6 @@ static NSString *const kPagination = @"pagination";
     self.instagramLoginBlock = nil;
     return YES;
 }
- */
 
 -(NSDictionary*)queryStringParametersFromString:(NSString*)string {
     

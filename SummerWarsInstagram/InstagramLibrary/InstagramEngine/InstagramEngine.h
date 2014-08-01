@@ -57,7 +57,6 @@ typedef NS_ENUM(NSUInteger, InstagramInfoErrorCode) {
          annotation:(id)annotation;
 */
 
-
 #pragma mark - Media -
 
 

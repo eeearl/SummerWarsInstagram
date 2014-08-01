@@ -24,7 +24,7 @@
 
 @interface IKUserInPhoto : NSObject
 
-@property (nonatomic, readonly) CGPoint positionPercentage;
+@property (nonatomic, readonly) Point positionPercentage;
 @property (nonatomic, readonly) InstagramUser *user;
 
 
