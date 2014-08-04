@@ -11,7 +11,7 @@ import Foundation
 
 class RootViewController: UIViewController {
     
-    var mediaArray = [InstagramMedia]()
+    var mediaArray = [AnyObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
