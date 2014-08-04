@@ -11,7 +11,7 @@ import Foundation
 
 class RootViewController: UIViewController {
 
-    var mediaArray = [NSArray]()
+    var mediaArray = [AnyObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +34,10 @@ class RootViewController: UIViewController {
     }
     
     func loadPopularMedia() {
-        let successBlock: ([AnyObject]!, InstagramPaginationInfo!) -> Void = {mediaArray, paginationInfo in
-//            mediaArray.removeAll(keepCapacity: false)
-//            mediaArray += media
-//            reloadData()
+        let successBlock: ([AnyObject]!, InstagramPaginationInfo!) -> Void = {media, paginationInfo in
+            self.mediaArray.removeAll(keepCapacity: false)
+            self.mediaArray.append(media);
+            self.reloadData()
         }
         let failureBlock: (NSError!) -> Void = {error in
             println("Load Popular Media Failed")
