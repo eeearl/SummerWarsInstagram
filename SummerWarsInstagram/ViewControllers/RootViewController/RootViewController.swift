@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class RootViewController: UIViewController {
 
@@ -33,19 +34,18 @@ class RootViewController: UIViewController {
     }
     
     func loadPopularMedia() {
-        // typedef void (^InstagramFailureBlock)(NSError *error);
-        func instagramFailureBlock(error:NSError) -> Void {
+        let successBlock: ([AnyObject]!, InstagramPaginationInfo!) -> Void = {mediaArray, paginationInfo in
+//            mediaArray.removeAll(keepCapacity: false)
+//            mediaArray += media
+//            reloadData()
+        }
+        let failureBlock: (NSError!) -> Void = {error in
             println("Load Popular Media Failed")
         }
         
-        // typedef void(^InstagramMediaBlock)(NSArray *media, InstagramPaginationInfo *paginationInfo);
-        func instagramMediaBlock(media:NSArray, paginationInfo:InstagramPaginationInfo) -> Void {
-            mediaArray.removeAll(keepCapacity:false)
-            mediaArray += media
-            reloadData()
-        }
+        InstagramEngine.sharedManager().getPopularMediaWithSuccess(successBlock, failure: failureBlock)
     }
-    
+
     func reloadData() {
         println("reloadData");
     }

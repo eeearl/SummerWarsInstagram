@@ -16,9 +16,9 @@
 
 typedef void(^InstagramLoginBlock)(NSError *error);
 typedef void(^InstagramMediaBlock)(NSArray *media, InstagramPaginationInfo *paginationInfo);
-typedef void (^InstagramFailureBlock)(NSError *error);
-typedef void (^InstagramTagsBlock)(NSArray *tags, InstagramPaginationInfo *paginationInfo);
-typedef void (^InstagramCommentsBlock)(NSArray *comments);
+typedef void(^InstagramFailureBlock)(NSError *error);
+typedef void(^InstagramTagsBlock)(NSArray *tags, InstagramPaginationInfo *paginationInfo);
+typedef void(^InstagramCommentsBlock)(NSArray *comments);
 
 typedef NS_ENUM(NSUInteger, MaxIdKeyType) {
     kPaginationMaxId,
