@@ -26,7 +26,7 @@ class RootViewController: UIViewController {
     }
     
     func loadDefaultMedia() {
-        if (InstagramEngine.sharedManager()?.accessToken?) {
+        if let accessToken = InstagramEngine.sharedManager()?.accessToken? {
             
         } else {
             self.loadPopularMedia()
