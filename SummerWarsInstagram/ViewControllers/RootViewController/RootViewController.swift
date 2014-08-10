@@ -9,14 +9,17 @@
 import UIKit
 import Foundation
 
-class RootViewController: UIViewController {
+class RootViewController: UIViewController, UICollectionViewDataSource {
     
-    var mediaArray = [AnyObject]()
-    
+    var mediaArray = [AnyObject]()    
+    @IBOutlet weak var collectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.collectionView.registerClass(PopularMediaCollectionViewCell.self, forCellWithReuseIdentifier: "PopularMediaCollectionViewCell")
+        
         self.loadDefaultMedia()
     }
     
@@ -35,16 +38,13 @@ class RootViewController: UIViewController {
     
     func loadPopularMedia() {
         let successBlock: ([AnyObject]!, InstagramPaginationInfo!) -> Void = { media, paginationInfo in
-            
             self.mediaArray.removeAll(keepCapacity: false)
-            
-            for obj in media {
-                if let instagramMedia = obj as? InstagramMedia {
+            for object in media {
+                if let instagramMedia = object as? InstagramMedia {
                     println(instagramMedia.thumbnailURL)
                     self.mediaArray.append(instagramMedia)
                 }
             }
-            
             self.reloadData()
         }
         
@@ -56,18 +56,24 @@ class RootViewController: UIViewController {
     }
     
     func reloadData() {
-        println("reloadData");
+        self.collectionView.reloadData()
+    }
+
+    func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
+        return self.mediaArray.count;
     }
     
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
+        var popularMediaCollectionViewCell = self.collectionView.dequeueReusableCellWithReuseIdentifier("PopularMediaCollectionViewCell", forIndexPath: indexPath) as PopularMediaCollectionViewCell
+        
+        let instagramMedia:InstagramMedia = self.mediaArray[indexPath.row] as InstagramMedia
+        var popularImage =  UIImage(data: NSData(contentsOfURL: instagramMedia.thumbnailURL))
+        
+        if let popularImageView = popularMediaCollectionViewCell.popularMediaImageView {
+            // !!! 현재 여기서 이미지뷰를 가져오지 못해서 이미지를 보여주지 못하고 있다. 
+            popularImageView.image = popularImage
+        }
+        
+        return popularMediaCollectionViewCell;
     }
-    */
-    
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		249300C0F0DE4B3685A1B74C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B0EB6B8D1140CDA8C49526 /* libPods.a */; };
+		F303431019980E230044C0EC /* PopularMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */; };
 		F305D6DA1982B994001E33D2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F305D6D91982B994001E33D2 /* RootViewController.swift */; };
 		F331EC7A197EA6B300E1CD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC79197EA6B300E1CD1E /* AppDelegate.swift */; };
 		F331EC7F197EA6B300E1CD1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F331EC7D197EA6B300E1CD1E /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		33B0EB6B8D1140CDA8C49526 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C5AB70E05F44B1B1E8EB70 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		F305D6D91982B994001E33D2 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F331EC74197EA6B300E1CD1E /* SummerWarsInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerWarsInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F331EC78197EA6B300E1CD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F305D6D91982B994001E33D2 /* RootViewController.swift */,
+				F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F303431019980E230044C0EC /* PopularMediaCollectionViewCell.swift in Sources */,
 				F3499112198BB82B00F116DC /* InstagramTag.m in Sources */,
 				F3499111198BB82B00F116DC /* InstagramPaginationInfo.m in Sources */,
 				F34990F7198BB7B200F116DC /* InstagramEngine.m in Sources */,
