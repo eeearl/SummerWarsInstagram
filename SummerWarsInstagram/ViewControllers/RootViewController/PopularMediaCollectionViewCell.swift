@@ -9,8 +9,9 @@
 import UIKit
 
 class PopularMediaCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var popularMediaImageView: UIImageView!
-
+    
     override func layoutSubviews() {
         self.backgroundColor = UIColor.greenColor()
     }

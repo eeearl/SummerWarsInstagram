@@ -64,13 +64,12 @@ class RootViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
-        var popularMediaCollectionViewCell = self.collectionView.dequeueReusableCellWithReuseIdentifier("PopularMediaCollectionViewCell", forIndexPath: indexPath) as PopularMediaCollectionViewCell
+        var popularMediaCollectionViewCell = self.collectionView.dequeueReusableCellWithReuseIdentifier("IdentifierPopularMediaCollectionViewCell", forIndexPath: indexPath) as PopularMediaCollectionViewCell
         
         let instagramMedia:InstagramMedia = self.mediaArray[indexPath.row] as InstagramMedia
         var popularImage =  UIImage(data: NSData(contentsOfURL: instagramMedia.thumbnailURL))
         
         if let popularImageView = popularMediaCollectionViewCell.popularMediaImageView {
-            // !!! 현재 여기서 이미지뷰를 가져오지 못해서 이미지를 보여주지 못하고 있다. 
             popularImageView.image = popularImage
         }
         
