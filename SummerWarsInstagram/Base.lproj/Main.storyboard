@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dro-76-Y0Q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -16,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZcX-nZ-rcc">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZcX-nZ-rcc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="FcG-1l-uX8">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dbl-IY-2UH">
                                     <size key="itemSize" width="106" height="106"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -32,12 +33,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-TW-5sQ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-TW-5sQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="1o9-TW-5sQ" firstAttribute="leading" secondItem="lwR-I1-VVh" secondAttribute="leading" id="DZe-nn-JD8"/>
+                                            <constraint firstAttribute="trailing" secondItem="1o9-TW-5sQ" secondAttribute="trailing" id="Hbh-Ie-s5N"/>
+                                            <constraint firstAttribute="bottom" secondItem="1o9-TW-5sQ" secondAttribute="bottom" id="mgP-lK-w5K"/>
+                                            <constraint firstItem="1o9-TW-5sQ" firstAttribute="top" secondItem="lwR-I1-VVh" secondAttribute="top" id="vMz-p1-LWt"/>
+                                        </constraints>
                                         <size key="customSize" width="106" height="106"/>
                                         <connections>
                                             <outlet property="popularMediaImageView" destination="1o9-TW-5sQ" id="oCc-nw-33z"/>
@@ -50,7 +57,13 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZcX-nZ-rcc" secondAttribute="trailing" constant="-16" id="TWY-Id-fJg"/>
+                            <constraint firstItem="ZcX-nZ-rcc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="c2I-XI-5Sv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZcX-nZ-rcc" secondAttribute="bottom" id="wIb-q9-wwg"/>
+                            <constraint firstItem="ZcX-nZ-rcc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="xWE-EJ-D18"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="guy-1F-DWV"/>
                     <connections>

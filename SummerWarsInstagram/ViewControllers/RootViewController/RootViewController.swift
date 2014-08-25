@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class RootViewController: UIViewController, UICollectionViewDataSource {
+class RootViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var mediaArray = [AnyObject]()    
     @IBOutlet weak var collectionView: UICollectionView!
@@ -57,6 +57,10 @@ class RootViewController: UIViewController, UICollectionViewDataSource {
     
     func reloadData() {
         self.collectionView.reloadData()
+    }
+    
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
+        return CGSizeMake(106, 106)
     }
 
     func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
