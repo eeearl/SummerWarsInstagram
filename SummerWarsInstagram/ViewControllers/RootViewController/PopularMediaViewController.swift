@@ -18,7 +18,7 @@ class PopularMediaViewController: UIViewController, UITableViewDataSource {
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "IdentifierMediaImageViewCell")
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "IdentifierMediaLabelCell")
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,22 +41,22 @@ class PopularMediaViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-//        let row = indexPath.row
+        let row = indexPath.row
+
+        if row == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("IdentifierMediaImageViewCell", forIndexPath: indexPath) as UITableViewCell
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("IdentifierMediaLabelCell", forIndexPath: indexPath) as UITableViewCell
+            
+            return cell
+        }
+        
+//        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
 //        
-//        if row == 0 {
-//            let cell = tableView.dequeueReusableCellWithIdentifier("IdentifierMediaImageViewCell", forIndexPath: indexPath) as UITableViewCell
-//            
-//            return cell
-//        } else {
-//            let cell = tableView.dequeueReusableCellWithIdentifier("IdentifierMediaLabelCell", forIndexPath: indexPath) as UITableViewCell
-//            
-//            return cell
-//        }
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
-        
-        cell.textLabel.text = String(format: "%i", indexPath.row+1)
-        
-        return cell
+//        cell.textLabel.text = String(format: "%i", indexPath.row+1)
+//        
+//        return cell
     }
 }
