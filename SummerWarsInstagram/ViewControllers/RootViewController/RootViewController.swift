@@ -17,10 +17,8 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
         self.collectionView.registerClass(PopularMediaCollectionViewCell.self, forCellWithReuseIdentifier: "PopularMediaCollectionViewCell")
-        
-        self.loadDefaultMedia()
+        self.loadMedia()
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,7 +26,7 @@ class RootViewController: UIViewController, UICollectionViewDataSource, UICollec
         // Dispose of any resources that can be recreated.
     }
     
-    func loadDefaultMedia() {
+    func loadMedia() {
         if let accessToken = InstagramEngine.sharedManager()?.accessToken? {
             
         } else {
