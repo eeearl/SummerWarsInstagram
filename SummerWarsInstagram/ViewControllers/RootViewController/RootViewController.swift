@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class RootViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class RootViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     var mediaArray = [AnyObject]()    
     @IBOutlet weak var collectionView: UICollectionView!

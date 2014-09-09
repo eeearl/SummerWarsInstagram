@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PopularMediaViewController: UIViewController, UITableViewDataSource {
+class PopularMediaViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
