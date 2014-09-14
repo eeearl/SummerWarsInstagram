@@ -8,23 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		249300C0F0DE4B3685A1B74C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B0EB6B8D1140CDA8C49526 /* libPods.a */; };
-		F303431019980E230044C0EC /* PopularMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */; };
-		F305D6DA1982B994001E33D2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F305D6D91982B994001E33D2 /* RootViewController.swift */; };
-		F31AC95819ABA1E100C79B5D /* PopularMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31AC95719ABA1E100C79B5D /* PopularMediaViewController.swift */; };
 		F331EC7A197EA6B300E1CD1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC79197EA6B300E1CD1E /* AppDelegate.swift */; };
 		F331EC7F197EA6B300E1CD1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F331EC7D197EA6B300E1CD1E /* Main.storyboard */; };
 		F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F331EC80197EA6B300E1CD1E /* Images.xcassets */; };
 		F331EC8D197EA6B300E1CD1E /* SummerWarsInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */; };
-		F34990F7198BB7B200F116DC /* InstagramEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F34990F6198BB7B200F116DC /* InstagramEngine.m */; };
-		F349910D198BB82B00F116DC /* IKUserInPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F3499100198BB82B00F116DC /* IKUserInPhoto.m */; };
-		F349910E198BB82B00F116DC /* InstagramComment.m in Sources */ = {isa = PBXBuildFile; fileRef = F3499102198BB82B00F116DC /* InstagramComment.m */; };
-		F349910F198BB82B00F116DC /* InstagramMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = F3499104198BB82B00F116DC /* InstagramMedia.m */; };
-		F3499110198BB82B00F116DC /* InstagramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3499106198BB82B00F116DC /* InstagramModel.m */; };
-		F3499111198BB82B00F116DC /* InstagramPaginationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3499108198BB82B00F116DC /* InstagramPaginationInfo.m */; };
-		F3499112198BB82B00F116DC /* InstagramTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F349910A198BB82B00F116DC /* InstagramTag.m */; };
-		F3499113198BB82B00F116DC /* InstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F349910C198BB82B00F116DC /* InstagramUser.m */; };
-		F3499115198BBC0400F116DC /* InstagramInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3499114198BBC0400F116DC /* InstagramInfo.plist */; };
 		F3847096198BAEC600A36B22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3847095198BAEC600A36B22 /* CoreLocation.framework */; };
+		F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +29,6 @@
 /* Begin PBXFileReference section */
 		33B0EB6B8D1140CDA8C49526 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C5AB70E05F44B1B1E8EB70 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMediaCollectionViewCell.swift; sourceTree = "<group>"; };
-		F305D6D91982B994001E33D2 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		F31AC95719ABA1E100C79B5D /* PopularMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularMediaViewController.swift; sourceTree = "<group>"; };
 		F331EC74197EA6B300E1CD1E /* SummerWarsInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerWarsInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F331EC78197EA6B300E1CD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F331EC79197EA6B300E1CD1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,25 +37,8 @@
 		F331EC86197EA6B300E1CD1E /* SummerWarsInstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SummerWarsInstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F331EC8B197EA6B300E1CD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerWarsInstagramTests.swift; sourceTree = "<group>"; };
-		F34990F4198BB7B100F116DC /* SummerWarsInstagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SummerWarsInstagram-Bridging-Header.h"; sourceTree = "<group>"; };
-		F34990F5198BB7B200F116DC /* InstagramEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramEngine.h; path = InstagramLibrary/InstagramEngine/InstagramEngine.h; sourceTree = "<group>"; };
-		F34990F6198BB7B200F116DC /* InstagramEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramEngine.m; path = InstagramLibrary/InstagramEngine/InstagramEngine.m; sourceTree = "<group>"; };
-		F34990FF198BB82B00F116DC /* IKUserInPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKUserInPhoto.h; path = InstagramLibrary/Models/IKUserInPhoto.h; sourceTree = "<group>"; };
-		F3499100198BB82B00F116DC /* IKUserInPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IKUserInPhoto.m; path = InstagramLibrary/Models/IKUserInPhoto.m; sourceTree = "<group>"; };
-		F3499101198BB82B00F116DC /* InstagramComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramComment.h; path = InstagramLibrary/Models/InstagramComment.h; sourceTree = "<group>"; };
-		F3499102198BB82B00F116DC /* InstagramComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramComment.m; path = InstagramLibrary/Models/InstagramComment.m; sourceTree = "<group>"; };
-		F3499103198BB82B00F116DC /* InstagramMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramMedia.h; path = InstagramLibrary/Models/InstagramMedia.h; sourceTree = "<group>"; };
-		F3499104198BB82B00F116DC /* InstagramMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramMedia.m; path = InstagramLibrary/Models/InstagramMedia.m; sourceTree = "<group>"; };
-		F3499105198BB82B00F116DC /* InstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramModel.h; path = InstagramLibrary/Models/InstagramModel.h; sourceTree = "<group>"; };
-		F3499106198BB82B00F116DC /* InstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramModel.m; path = InstagramLibrary/Models/InstagramModel.m; sourceTree = "<group>"; };
-		F3499107198BB82B00F116DC /* InstagramPaginationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramPaginationInfo.h; path = InstagramLibrary/Models/InstagramPaginationInfo.h; sourceTree = "<group>"; };
-		F3499108198BB82B00F116DC /* InstagramPaginationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramPaginationInfo.m; path = InstagramLibrary/Models/InstagramPaginationInfo.m; sourceTree = "<group>"; };
-		F3499109198BB82B00F116DC /* InstagramTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramTag.h; path = InstagramLibrary/Models/InstagramTag.h; sourceTree = "<group>"; };
-		F349910A198BB82B00F116DC /* InstagramTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramTag.m; path = InstagramLibrary/Models/InstagramTag.m; sourceTree = "<group>"; };
-		F349910B198BB82B00F116DC /* InstagramUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramUser.h; path = InstagramLibrary/Models/InstagramUser.h; sourceTree = "<group>"; };
-		F349910C198BB82B00F116DC /* InstagramUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramUser.m; path = InstagramLibrary/Models/InstagramUser.m; sourceTree = "<group>"; };
-		F3499114198BBC0400F116DC /* InstagramInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InstagramInfo.plist; path = InstagramLibrary/InstagramEngine/InstagramInfo.plist; sourceTree = "<group>"; };
 		F3847095198BAEC600A36B22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,24 +70,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F305D6D51982B830001E33D2 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F305D6D61982B84D001E33D2 /* RootViewController */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		F305D6D61982B84D001E33D2 /* RootViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F305D6D91982B994001E33D2 /* RootViewController.swift */,
-				F303430F19980E230044C0EC /* PopularMediaCollectionViewCell.swift */,
-				F31AC95719ABA1E100C79B5D /* PopularMediaViewController.swift */,
-			);
-			path = RootViewController;
-			sourceTree = "<group>";
-		};
 		F331EC6B197EA6B300E1CD1E = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +93,11 @@
 		F331EC76197EA6B300E1CD1E /* SummerWarsInstagram */ = {
 			isa = PBXGroup;
 			children = (
-				F34990FE198BB80D00F116DC /* InstagramEngine */,
-				F305D6D51982B830001E33D2 /* ViewControllers */,
+				F3E9BBBC19C5AE8A00D44CB6 /* ViewControllers */,
 				F331EC79197EA6B300E1CD1E /* AppDelegate.swift */,
 				F331EC7D197EA6B300E1CD1E /* Main.storyboard */,
 				F331EC80197EA6B300E1CD1E /* Images.xcassets */,
 				F331EC77197EA6B300E1CD1E /* Supporting Files */,
-				F34990F4198BB7B100F116DC /* SummerWarsInstagram-Bridging-Header.h */,
 			);
 			path = SummerWarsInstagram;
 			sourceTree = "<group>";
@@ -178,28 +127,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F34990FE198BB80D00F116DC /* InstagramEngine */ = {
+		F3E9BBBC19C5AE8A00D44CB6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F3499114198BBC0400F116DC /* InstagramInfo.plist */,
-				F34990FF198BB82B00F116DC /* IKUserInPhoto.h */,
-				F3499100198BB82B00F116DC /* IKUserInPhoto.m */,
-				F3499101198BB82B00F116DC /* InstagramComment.h */,
-				F3499102198BB82B00F116DC /* InstagramComment.m */,
-				F3499103198BB82B00F116DC /* InstagramMedia.h */,
-				F3499104198BB82B00F116DC /* InstagramMedia.m */,
-				F3499105198BB82B00F116DC /* InstagramModel.h */,
-				F3499106198BB82B00F116DC /* InstagramModel.m */,
-				F3499107198BB82B00F116DC /* InstagramPaginationInfo.h */,
-				F3499108198BB82B00F116DC /* InstagramPaginationInfo.m */,
-				F3499109198BB82B00F116DC /* InstagramTag.h */,
-				F349910A198BB82B00F116DC /* InstagramTag.m */,
-				F349910B198BB82B00F116DC /* InstagramUser.h */,
-				F349910C198BB82B00F116DC /* InstagramUser.m */,
-				F34990F5198BB7B200F116DC /* InstagramEngine.h */,
-				F34990F6198BB7B200F116DC /* InstagramEngine.m */,
+				F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */,
 			);
-			name = InstagramEngine;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +219,6 @@
 			files = (
 				F331EC7F197EA6B300E1CD1E /* Main.storyboard in Resources */,
 				F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */,
-				F3499115198BBC0400F116DC /* InstagramInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,18 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F303431019980E230044C0EC /* PopularMediaCollectionViewCell.swift in Sources */,
-				F3499112198BB82B00F116DC /* InstagramTag.m in Sources */,
-				F31AC95819ABA1E100C79B5D /* PopularMediaViewController.swift in Sources */,
-				F3499111198BB82B00F116DC /* InstagramPaginationInfo.m in Sources */,
-				F34990F7198BB7B200F116DC /* InstagramEngine.m in Sources */,
-				F3499113198BB82B00F116DC /* InstagramUser.m in Sources */,
-				F305D6DA1982B994001E33D2 /* RootViewController.swift in Sources */,
-				F349910D198BB82B00F116DC /* IKUserInPhoto.m in Sources */,
-				F3499110198BB82B00F116DC /* InstagramModel.m in Sources */,
-				F349910F198BB82B00F116DC /* InstagramMedia.m in Sources */,
+				F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */,
 				F331EC7A197EA6B300E1CD1E /* AppDelegate.swift in Sources */,
-				F349910E198BB82B00F116DC /* InstagramComment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +391,7 @@
 				INFOPLIST_FILE = SummerWarsInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SummerWarsInstagram/SummerWarsInstagram-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -484,7 +406,7 @@
 				INFOPLIST_FILE = SummerWarsInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SummerWarsInstagram/SummerWarsInstagram-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
