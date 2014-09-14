@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-InstagramKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4AF8B12A102E40DB8B23514D</key>
+		<key>7695E42D50E047FE8BA527AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF8F599059934A69ACBB1BD7</key>
+		<key>76DBEFAC02D6474EB36FA969</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4F9BA4A13E440E2A6E7459E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
