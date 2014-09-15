@@ -13,6 +13,7 @@
 		F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F331EC80197EA6B300E1CD1E /* Images.xcassets */; };
 		F331EC8D197EA6B300E1CD1E /* SummerWarsInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */; };
 		F3847096198BAEC600A36B22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3847095198BAEC600A36B22 /* CoreLocation.framework */; };
+		F3C5D16519C73A3600977350 /* InstagramKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3C5D16419C73A3600977350 /* InstagramKit.plist */; };
 		F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		F331EC8B197EA6B300E1CD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerWarsInstagramTests.swift; sourceTree = "<group>"; };
 		F3847095198BAEC600A36B22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3C5D16419C73A3600977350 /* InstagramKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InstagramKit.plist; sourceTree = "<group>"; };
+		F3C5D16919C743C000977350 /* SummerWarsInstagram-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SummerWarsInstagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +98,7 @@
 			children = (
 				F3E9BBBC19C5AE8A00D44CB6 /* ViewControllers */,
 				F331EC79197EA6B300E1CD1E /* AppDelegate.swift */,
+				F3C5D16919C743C000977350 /* SummerWarsInstagram-Bridging-Header.h */,
 				F331EC7D197EA6B300E1CD1E /* Main.storyboard */,
 				F331EC80197EA6B300E1CD1E /* Images.xcassets */,
 				F331EC77197EA6B300E1CD1E /* Supporting Files */,
@@ -105,6 +109,7 @@
 		F331EC77197EA6B300E1CD1E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3C5D16419C73A3600977350 /* InstagramKit.plist */,
 				F331EC78197EA6B300E1CD1E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F331EC7F197EA6B300E1CD1E /* Main.storyboard in Resources */,
+				F3C5D16519C73A3600977350 /* InstagramKit.plist in Resources */,
 				F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +397,7 @@
 				INFOPLIST_FILE = SummerWarsInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SummerWarsInstagram/SummerWarsInstagram-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -406,7 +412,7 @@
 				INFOPLIST_FILE = SummerWarsInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SummerWarsInstagram/SummerWarsInstagram-Bridging-Header.h";
 			};
 			name = Release;
 		};
