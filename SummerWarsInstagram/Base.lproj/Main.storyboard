@@ -56,9 +56,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SwU-Mg-Pl1" kind="presentation" id="lzz-fp-wQd"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.34999999999999964" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login" translatesAutoresizingMaskIntoConstraints="NO" id="Dmw-Qs-y1X">
-                                <rect key="frame" x="-6" y="-32" width="612" height="612"/>
+                                <rect key="frame" x="-6" y="-12" width="612" height="612"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,8 +70,8 @@
                             <constraint firstItem="CIR-pp-8Ve" firstAttribute="top" secondItem="rhp-HR-Pdg" secondAttribute="bottom" constant="8" id="DgD-4D-VgT"/>
                             <constraint firstItem="rhp-HR-Pdg" firstAttribute="top" secondItem="3VU-oa-1ML" secondAttribute="bottom" constant="204" id="Nn3-s4-XR3"/>
                             <constraint firstItem="Dmw-Qs-y1X" firstAttribute="leading" secondItem="UNx-zf-iI3" secondAttribute="leadingMargin" constant="-22" id="QS0-a7-rO9"/>
-                            <constraint firstItem="Dmw-Qs-y1X" firstAttribute="top" secondItem="UNx-zf-iI3" secondAttribute="topMargin" constant="-32" id="UWJ-P5-2LW"/>
-                            <constraint firstItem="pCg-zj-QqD" firstAttribute="top" secondItem="Dmw-Qs-y1X" secondAttribute="bottom" constant="20" id="Y37-rv-gwS"/>
+                            <constraint firstItem="Dmw-Qs-y1X" firstAttribute="top" secondItem="UNx-zf-iI3" secondAttribute="topMargin" constant="-12" id="UWJ-P5-2LW"/>
+                            <constraint firstItem="pCg-zj-QqD" firstAttribute="top" secondItem="Dmw-Qs-y1X" secondAttribute="bottom" id="Y37-rv-gwS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dmw-Qs-y1X" secondAttribute="trailing" constant="-22" id="bI3-V9-hQr"/>
                             <constraint firstAttribute="centerX" secondItem="CIR-pp-8Ve" secondAttribute="centerX" id="s8h-C5-ayY"/>
                         </constraints>
@@ -79,6 +82,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWB-fD-UPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136" y="455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bGl-Y3-4Wg">
+            <objects>
+                <navigationController id="SwU-Mg-Pl1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Am0-T1-1V5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="slz-Xh-2M1" kind="relationship" relationship="rootViewController" id="YjK-2G-rb8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ab-7r-CkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="455"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Eq3-qP-oqo">
+            <objects>
+                <viewController id="slz-Xh-2M1" customClass="LoginWebViewController" customModule="SummerWarsInstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XXc-Bg-ncK"/>
+                        <viewControllerLayoutGuide type="bottom" id="YKC-tr-OMl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2Q-Ar-UYy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIT-Jb-3Pf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="slz-Xh-2M1" id="Pwg-a6-1uY"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="qgc-b7-Btq">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="FbW-pH-SQN">
+                            <connections>
+                                <action selector="back:" destination="slz-Xh-2M1" id="3Gj-oF-Dek"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="QIT-Jb-3Pf" id="L1W-fh-N8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46e-W3-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="455"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,7 @@
 		F331EC8D197EA6B300E1CD1E /* SummerWarsInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */; };
 		F3847096198BAEC600A36B22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3847095198BAEC600A36B22 /* CoreLocation.framework */; };
 		F3C5D16519C73A3600977350 /* InstagramKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3C5D16419C73A3600977350 /* InstagramKit.plist */; };
+		F3C5D16B19C7785200977350 /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5D16A19C7785200977350 /* LoginWebViewController.swift */; };
 		F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		F3847095198BAEC600A36B22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F3C5D16419C73A3600977350 /* InstagramKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InstagramKit.plist; sourceTree = "<group>"; };
 		F3C5D16919C743C000977350 /* SummerWarsInstagram-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SummerWarsInstagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3C5D16A19C7785200977350 /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */,
+				F3C5D16A19C7785200977350 /* LoginWebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */,
+				F3C5D16B19C7785200977350 /* LoginWebViewController.swift in Sources */,
 				F331EC7A197EA6B300E1CD1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
