@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhp-HR-Pdg">
-                                <rect key="frame" x="181" y="76" width="239" height="40"/>
+                                <rect key="frame" x="181" y="85" width="239" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CeR-db-5DI"/>
                                     <constraint firstAttribute="width" constant="239" id="haB-RE-Keq"/>
@@ -90,9 +90,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Dmw-Qs-y1X" secondAttribute="trailing" constant="-16" id="b5q-p9-xbX"/>
                             <constraint firstAttribute="centerX" secondItem="Pxx-NO-l1N" secondAttribute="centerX" id="gX1-Sy-sxd"/>
                             <constraint firstAttribute="centerX" secondItem="xWb-Nz-gOG" secondAttribute="centerX" id="hqD-O7-k6u"/>
-                            <constraint firstItem="xWb-Nz-gOG" firstAttribute="top" secondItem="rhp-HR-Pdg" secondAttribute="bottom" constant="15" id="k6O-89-DA2"/>
+                            <constraint firstItem="xWb-Nz-gOG" firstAttribute="top" secondItem="rhp-HR-Pdg" secondAttribute="bottom" constant="6" id="k6O-89-DA2"/>
                             <constraint firstAttribute="centerX" secondItem="rhp-HR-Pdg" secondAttribute="centerX" id="t76-xq-jNH"/>
-                            <constraint firstItem="rhp-HR-Pdg" firstAttribute="top" secondItem="3VU-oa-1ML" secondAttribute="bottom" constant="56" id="zPc-Kh-kUG"/>
+                            <constraint firstItem="rhp-HR-Pdg" firstAttribute="top" secondItem="3VU-oa-1ML" secondAttribute="bottom" constant="65" id="zPc-Kh-kUG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bdw-jN-uJT"/>
