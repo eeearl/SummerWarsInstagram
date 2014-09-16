@@ -9,16 +9,19 @@
 import UIKit
 
 class LoginWebViewController: UIViewController, UIWebViewDelegate {
-
-    @IBOutlet weak var webView: UIWebView!
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    var scope: IKLoginScope
+    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let configuration:Dictionary = InstagramEngine.sharedEngineConfiguration()
+        let scopeString:NSString = InstagramEngine.stringForScope(self.scope)
+        let urlString = "\(configuration[kInstagramKitAuthorizationUrlConfigurationKey])?client_id=\(configuration[kInstagramKitAppClientIdConfigurationKey])&redirect_uri=\(configuration[kInstagramKitAppClientIdConfigurationKey])&response_type=token&scope=\(scopeString)"
+        let url = NSURL.URLWithString(urlString)
+    
+        self.webView.loadRequest(NSURLRequest(URL: url))
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,7 +13,15 @@
 		F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F331EC80197EA6B300E1CD1E /* Images.xcassets */; };
 		F331EC8D197EA6B300E1CD1E /* SummerWarsInstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */; };
 		F3847096198BAEC600A36B22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3847095198BAEC600A36B22 /* CoreLocation.framework */; };
-		F3C5D16519C73A3600977350 /* InstagramKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3C5D16419C73A3600977350 /* InstagramKit.plist */; };
+		F3866CD519C7ACEE002F40F6 /* InstagramEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CC319C7ACEE002F40F6 /* InstagramEngine.m */; };
+		F3866CD619C7ACEE002F40F6 /* InstagramKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3866CC519C7ACEE002F40F6 /* InstagramKit.plist */; };
+		F3866CD719C7ACEE002F40F6 /* IKUserInPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CC819C7ACEE002F40F6 /* IKUserInPhoto.m */; };
+		F3866CD819C7ACEE002F40F6 /* InstagramComment.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CCA19C7ACEE002F40F6 /* InstagramComment.m */; };
+		F3866CD919C7ACEE002F40F6 /* InstagramMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CCC19C7ACEE002F40F6 /* InstagramMedia.m */; };
+		F3866CDA19C7ACEE002F40F6 /* InstagramModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CCE19C7ACEE002F40F6 /* InstagramModel.m */; };
+		F3866CDB19C7ACEE002F40F6 /* InstagramPaginationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CD019C7ACEE002F40F6 /* InstagramPaginationInfo.m */; };
+		F3866CDC19C7ACEE002F40F6 /* InstagramTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CD219C7ACEE002F40F6 /* InstagramTag.m */; };
+		F3866CDD19C7ACEE002F40F6 /* InstagramUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F3866CD419C7ACEE002F40F6 /* InstagramUser.m */; };
 		F3C5D16B19C7785200977350 /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5D16A19C7785200977350 /* LoginWebViewController.swift */; };
 		F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +48,24 @@
 		F331EC8B197EA6B300E1CD1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F331EC8C197EA6B300E1CD1E /* SummerWarsInstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerWarsInstagramTests.swift; sourceTree = "<group>"; };
 		F3847095198BAEC600A36B22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F3C5D16419C73A3600977350 /* InstagramKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InstagramKit.plist; sourceTree = "<group>"; };
+		F3866CC219C7ACEE002F40F6 /* InstagramEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramEngine.h; sourceTree = "<group>"; };
+		F3866CC319C7ACEE002F40F6 /* InstagramEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramEngine.m; sourceTree = "<group>"; };
+		F3866CC419C7ACEE002F40F6 /* InstagramKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramKit.h; sourceTree = "<group>"; };
+		F3866CC519C7ACEE002F40F6 /* InstagramKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InstagramKit.plist; sourceTree = "<group>"; };
+		F3866CC719C7ACEE002F40F6 /* IKUserInPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKUserInPhoto.h; sourceTree = "<group>"; };
+		F3866CC819C7ACEE002F40F6 /* IKUserInPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKUserInPhoto.m; sourceTree = "<group>"; };
+		F3866CC919C7ACEE002F40F6 /* InstagramComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramComment.h; sourceTree = "<group>"; };
+		F3866CCA19C7ACEE002F40F6 /* InstagramComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramComment.m; sourceTree = "<group>"; };
+		F3866CCB19C7ACEE002F40F6 /* InstagramMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramMedia.h; sourceTree = "<group>"; };
+		F3866CCC19C7ACEE002F40F6 /* InstagramMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramMedia.m; sourceTree = "<group>"; };
+		F3866CCD19C7ACEE002F40F6 /* InstagramModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramModel.h; sourceTree = "<group>"; };
+		F3866CCE19C7ACEE002F40F6 /* InstagramModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramModel.m; sourceTree = "<group>"; };
+		F3866CCF19C7ACEE002F40F6 /* InstagramPaginationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramPaginationInfo.h; sourceTree = "<group>"; };
+		F3866CD019C7ACEE002F40F6 /* InstagramPaginationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramPaginationInfo.m; sourceTree = "<group>"; };
+		F3866CD119C7ACEE002F40F6 /* InstagramTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramTag.h; sourceTree = "<group>"; };
+		F3866CD219C7ACEE002F40F6 /* InstagramTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramTag.m; sourceTree = "<group>"; };
+		F3866CD319C7ACEE002F40F6 /* InstagramUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramUser.h; sourceTree = "<group>"; };
+		F3866CD419C7ACEE002F40F6 /* InstagramUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramUser.m; sourceTree = "<group>"; };
 		F3C5D16919C743C000977350 /* SummerWarsInstagram-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SummerWarsInstagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3C5D16A19C7785200977350 /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		F3E9BBBD19C5AE9D00D44CB6 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +123,7 @@
 		F331EC76197EA6B300E1CD1E /* SummerWarsInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				F3866CBF19C7ACAE002F40F6 /* Library */,
 				F3E9BBBC19C5AE8A00D44CB6 /* ViewControllers */,
 				F331EC79197EA6B300E1CD1E /* AppDelegate.swift */,
 				F3C5D16919C743C000977350 /* SummerWarsInstagram-Bridging-Header.h */,
@@ -111,7 +137,6 @@
 		F331EC77197EA6B300E1CD1E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3C5D16419C73A3600977350 /* InstagramKit.plist */,
 				F331EC78197EA6B300E1CD1E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -132,6 +157,55 @@
 				F331EC8B197EA6B300E1CD1E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3866CBF19C7ACAE002F40F6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F3866CC019C7ACEE002F40F6 /* InstagramKit */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F3866CC019C7ACEE002F40F6 /* InstagramKit */ = {
+			isa = PBXGroup;
+			children = (
+				F3866CC119C7ACEE002F40F6 /* Engine */,
+				F3866CC419C7ACEE002F40F6 /* InstagramKit.h */,
+				F3866CC519C7ACEE002F40F6 /* InstagramKit.plist */,
+				F3866CC619C7ACEE002F40F6 /* Models */,
+			);
+			path = InstagramKit;
+			sourceTree = "<group>";
+		};
+		F3866CC119C7ACEE002F40F6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F3866CC219C7ACEE002F40F6 /* InstagramEngine.h */,
+				F3866CC319C7ACEE002F40F6 /* InstagramEngine.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		F3866CC619C7ACEE002F40F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3866CC719C7ACEE002F40F6 /* IKUserInPhoto.h */,
+				F3866CC819C7ACEE002F40F6 /* IKUserInPhoto.m */,
+				F3866CC919C7ACEE002F40F6 /* InstagramComment.h */,
+				F3866CCA19C7ACEE002F40F6 /* InstagramComment.m */,
+				F3866CCB19C7ACEE002F40F6 /* InstagramMedia.h */,
+				F3866CCC19C7ACEE002F40F6 /* InstagramMedia.m */,
+				F3866CCD19C7ACEE002F40F6 /* InstagramModel.h */,
+				F3866CCE19C7ACEE002F40F6 /* InstagramModel.m */,
+				F3866CCF19C7ACEE002F40F6 /* InstagramPaginationInfo.h */,
+				F3866CD019C7ACEE002F40F6 /* InstagramPaginationInfo.m */,
+				F3866CD119C7ACEE002F40F6 /* InstagramTag.h */,
+				F3866CD219C7ACEE002F40F6 /* InstagramTag.m */,
+				F3866CD319C7ACEE002F40F6 /* InstagramUser.h */,
+				F3866CD419C7ACEE002F40F6 /* InstagramUser.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F3E9BBBC19C5AE8A00D44CB6 /* ViewControllers */ = {
@@ -226,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F331EC7F197EA6B300E1CD1E /* Main.storyboard in Resources */,
-				F3C5D16519C73A3600977350 /* InstagramKit.plist in Resources */,
+				F3866CD619C7ACEE002F40F6 /* InstagramKit.plist in Resources */,
 				F331EC81197EA6B300E1CD1E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +352,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3866CDB19C7ACEE002F40F6 /* InstagramPaginationInfo.m in Sources */,
+				F3866CDC19C7ACEE002F40F6 /* InstagramTag.m in Sources */,
+				F3866CD519C7ACEE002F40F6 /* InstagramEngine.m in Sources */,
+				F3866CD719C7ACEE002F40F6 /* IKUserInPhoto.m in Sources */,
+				F3866CDA19C7ACEE002F40F6 /* InstagramModel.m in Sources */,
 				F3E9BBBE19C5AE9D00D44CB6 /* LogInViewController.swift in Sources */,
 				F3C5D16B19C7785200977350 /* LoginWebViewController.swift in Sources */,
+				F3866CDD19C7ACEE002F40F6 /* InstagramUser.m in Sources */,
+				F3866CD819C7ACEE002F40F6 /* InstagramComment.m in Sources */,
+				F3866CD919C7ACEE002F40F6 /* InstagramMedia.m in Sources */,
 				F331EC7A197EA6B300E1CD1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

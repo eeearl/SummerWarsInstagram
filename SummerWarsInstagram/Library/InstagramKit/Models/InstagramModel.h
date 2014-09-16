@@ -58,7 +58,6 @@
 #define kLocation @"location"
 #define kType @"type"
 
-#define kDate @"created_time"
 #define kCreator @"from"
 #define kText @"text"
 
@@ -77,5 +76,14 @@
 
 #define kTagMediaCount @"media_count"
 #define kTagName @"name"
+
+#define kNextURL @"next_url"
+#define kNextMaxId @"next_max_id"
+#define kNextMaxLikeId @"next_max_like_id"
+#define kNextMaxTagId @"next_max_tag_id"
+
+#define kMaxId @"max_id"
+#define kMaxLikeId @"max_like_id"
+#define kMaxTagId @"max_tag_id"
 
 #define IKNotNull(obj) (obj && (![obj isEqual:[NSNull null]]) && (![obj isEqual:@"<null>"]) )

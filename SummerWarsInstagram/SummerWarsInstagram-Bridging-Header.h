@@ -4,4 +4,4 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <POP/POP.h>
-#import <InstagramKit/InstagramKit.h>
+#import "InstagramKit.h"

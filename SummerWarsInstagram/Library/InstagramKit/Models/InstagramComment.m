@@ -18,14 +18,21 @@
 //    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import "InstagramComment.h"
+#import "InstagramUser.h"
 
-@class InstagramUser;
+@implementation InstagramComment
 
-@interface IKUserInPhoto : NSObject
-
-@property (nonatomic, readonly) CGPoint positionPercentage;
-@property (nonatomic, readonly) InstagramUser *user;
+- (id)initWithInfo:(NSDictionary *)info
+{
+    self = [super initWithInfo:info];
+    if (self && IKNotNull(info)) {
+        _user = [[InstagramUser alloc] initWithInfo:info[kCreator]];
+        _text = [[NSString alloc] initWithString:info[kText]];
+        _createdDate = [[NSDate alloc] initWithTimeIntervalSince1970:[info[kCreatedDate] doubleValue]];
+    }
+    return self;
+}
 
 
 @end
