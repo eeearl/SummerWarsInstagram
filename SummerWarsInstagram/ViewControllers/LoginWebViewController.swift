@@ -12,14 +12,14 @@ class LoginWebViewController: UIViewController, UIWebViewDelegate {
     
     var scope: IKLoginScope = IKLoginScope.Basic
     @IBOutlet weak var webView: UIWebView!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let configuration:Dictionary = InstagramEngine.sharedEngineConfiguration()
         let scopeString:NSString = InstagramEngine.stringForScope(self.scope)
-        let urlString = "\(configuration[kInstagramKitAuthorizationUrlConfigurationKey])?client_id=\(configuration[kInstagramKitAppClientIdConfigurationKey])&redirect_uri=\(configuration[kInstagramKitAppClientIdConfigurationKey])&response_type=token&scope=\(scopeString)"
+        
+        let urlString = NSString(format: "%@?client_id=%@&redirect_uri=%@&response_type=token&scope=%@", configuration[kInstagramKitAuthorizationUrlConfigurationKey] as NSString, configuration[kInstagramKitAppClientIdConfigurationKey] as NSString, configuration[kInstagramKitAppRedirectUrlConfigurationKey] as NSString, scopeString)
         let url = NSURL.URLWithString(urlString)
     
         self.webView.loadRequest(NSURLRequest(URL: url))
